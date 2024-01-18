@@ -1,0 +1,15 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.cards-container > div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 400px;
+    height: 200px;
+}
