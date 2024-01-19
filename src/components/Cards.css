@@ -4,6 +4,12 @@
     gap: 20px;
     justify-items: center;
     align-items: center;
+    margin-top: 2%;
+}
+
+.cards-container > div {
+    position: relative;
+    overflow: hidden;
 }
 
 .cards-container > div img {
@@ -12,4 +18,26 @@
     object-fit: cover;
     width: 400px;
     height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.cards-container > div:hover img {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.text-gray-800 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-medium {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-2xl {
+    font-family: 'Roboto', sans-serif;
 }
