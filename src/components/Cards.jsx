@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Cards.css";
 
+
+
 function Cards() {
   const [stays, setStays] = useState([]);
 
@@ -37,8 +39,9 @@ function Cards() {
             <div className="p-5">
 
              <p className="mb-3 font-normal text-gray-700">
+              <span> {stay.superHost}
                  <span style={{ fontSize: "0.8rem", display: "flex", alignItems: "center" }}>
-                     Type: {stay.type}. Beds: {stay.beds}
+                     {stay.type}.  {stay.beds} Beds
                      <span style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}>
                          <span style={{ marginRight: "0.3rem" }}>{stay.rating}</span>
                          <svg
@@ -50,6 +53,7 @@ function Cards() {
                          >
                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                          </svg>
+                      </span>
                      </span>
                  </span>
              </p>
@@ -83,6 +87,7 @@ function Cards() {
           </div>
         ))}
       </div>
+  
     </>
   );
 }
